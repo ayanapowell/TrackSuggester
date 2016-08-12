@@ -1,11 +1,18 @@
+body {
+	background-color: #a6ff4d;
+}
 h1 {
 	text-align: center;
-	color: ;
+	color: white;
+	font-family: 'Bungee Inline', cursive;
 }
 
 h3 {
 	text-align: center;
 	cursor: pointer;
+	font-family: 'Rokkitt', serif;
+	font-weight: 700;
+
 }
 
 .container,

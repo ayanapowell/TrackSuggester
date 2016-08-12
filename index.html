@@ -3,48 +3,54 @@
 <head>
 	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
 	<link href="css/styles.css" rel="stylesheet" type="text/css">
+<!-- FONTS -->
+	<link href="https://fonts.googleapis.com/css?family=Bungee+Inline" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Rokkitt:400,700" rel="stylesheet">
+
+
+
 	<title>Track Suggester</title>
 </head>
 <body>
 	<div class="initial container">
 		<h1>What kind of developer do you want to be?</h1>
-		<div class="row" id="choices">
-			<button id="web" class="col-sm-4"><h3>WEB</h3></button>
-			<button id="mobile" class="col-sm-4"><h3>MOBILE</h3></button>
-			<button id="software" class="col-sm-4"><h3>SOFTWARE</h3></button>
+		<div id="initial_choices">
+			<button class="choices" id="web" class="col-sm-4"><h3>WEB</h3></button>
+			<button class="choices" id="mobile" class="col-sm-4"><h3>MOBILE</h3></button>
+			<button class="choices" id="software" class="col-sm-4"><h3>SOFTWARE</h3></button>
 		</div>	
 		<!--<input type="button" name="button" value="Click"/>-->	
 	</div>
 
 	<div class="web-dev container">
 		<h1>You picked 'WEB' :<br>What are you more interested in?</h1>
-		<div class="row" id="choices">
-			<button id="looks" class="col-sm-6"><h3>How things look</h3> <!-- CSS/Design track! -->
-			<button id="works" class="col-sm-6"><h3>How things work</h3> <!-- Ruby / PHP-->
+		<div id="webDev_choices">
+			<button class="choices" id="looks" class="col-sm-6"><h3>How things look</h3></button> <!-- CSS/Design track! -->
+			<button class="choices" id="works" class="col-sm-6"><h3>How things work</h3></button> <!-- Ruby / PHP-->
 		</div>
 	</div>
 
 	<div class="web-work container">
 		<h1>You picked 'HOW THINGS WORK' :<br>Does interactive webpages and web application interest you?</h1>
-		<div class="row" id="choices">
-			<button id="yes" class="col-sm-6"><h3>Yes.</h3> <!-- Ruby -->
-			<button id="no" class="col-sm-6"><h3>No.</h3> <!-- PHP -->
+		<div id="webWork_choices">
+			<button class="choices" id="yes" class="col-sm-6"><h3>Yes.</h3></button> <!-- Ruby -->
+			<button class="choices" id="no" class="col-sm-6"><h3>No.</h3></button> <!-- PHP -->
 		</div>	
 	</div>
 
 	<div class="mobile-dev container">
 		<h1>You picked 'MOBILE' :<br>What platform do you want to specialize in?</h1>
-		<div class="row" id="choices">
-			<button id="windows" class="col-sm-6"><h3>Windows</h3> <!-- C# -->
-			<button id="android" class="col-sm-6"><h3>Android</h3> <!-- Java -->		
+		<div id="mobileDev_choices">
+			<button class="choices" id="windows" class="col-sm-6"><h3>Windows</h3></button> <!-- C# -->
+			<button class="choices" id="android" class="col-sm-6"><h3>Android</h3></button> <!-- Java -->		
 		</div>
 	</div>
 
 	<div class="software-dev container">
 		<h1>You picked 'DESKTOP SOFTWARE' :<br>What platform form do you want to specialize in?</h1>
-		<div class="row" id="choices">
-			<button id="windows" class="col-sm-6"><h3>Windows</h3> <!-- C# -->
-			<button id="cross-platform" class="col-sm-6"><h3>Cross-plarform</h3> <!--Java -->
+		<div id="softwareDev_choices">
+			<button class="choices" id="windows" class="col-sm-6"><h3>Windows</h3></button> <!-- C# -->
+			<button class="choices" id="cross-platform" class="col-sm-6"><h3>Cross-plarform</h3></button> <!--Java -->
 		</div>
 	</div>
 
