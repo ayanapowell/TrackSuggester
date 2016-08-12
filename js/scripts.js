@@ -7,12 +7,12 @@ $(document).ready(function(){
 			choices = document.getElementsByClassName('choices'),
 			i;
 
-	$('p').on('click', function(){
-		$('.intro').fadeOut(900);
-		setTimeout(function(){
-			$('#wrapper').fadeIn(1000);
-		}, 950);
-	});
+		$('p').on('click', function(){
+			$('.intro').fadeOut(900);
+			setTimeout(function(){
+				$('#wrapper').fadeIn(1000);
+			}, 950);
+		});
 
 		var initialSelection = function initialSelection(evt) {
     	var target = evt.currentTarget; 
@@ -25,6 +25,7 @@ $(document).ready(function(){
     			webDev.slideDown();
     			webDev.find('h1').slideDown();	
     		}, 1000)
+
     	} else if (target.id=== 'mobile') {
     		webDev.removeClass('show');
     		softwareDev.removeClass('show');
@@ -35,14 +36,15 @@ $(document).ready(function(){
     			mobileDev.find('h1').slideDown();
     		},1000)
     		mobileDev.addClass('show');
+
     	} else if (target.id === 'software') {
     		webDev.removeClass('show');
     		mobileDev.removeClass('show');
     		initial.slideUp(800);
     		initial.find('h1').slideUp(800);
     		setTimeout(function(){
-    			webDev.slideDown();
-    			webDev.find('h1').slideDown();
+    			softwareDev.slideDown();
+    			softwareDev.find('h1').slideDown();
     		},1000)
     	};
 		};
@@ -50,7 +52,11 @@ $(document).ready(function(){
 		var webDevSelection = function webDevSelection(evt) {
 			var target = evt.currentTarget;
 			if (target.id === 'looks') {
-				alert("You should take CSS/Design!");
+				webDev.slideUp();
+				webDev.find('h1').slideUp();
+				setTimeout(function(){
+					result();
+				}, 700)
 			} else if (target.id === 'works') {
 				webDev.slideUp(800);
 				webDev.find('h1').slideUp(800);
@@ -64,31 +70,60 @@ $(document).ready(function(){
 		var webWorkSelection = function webWorkSelection(evt) {
 			var target = evt.currentTarget;
 			if (target.id === 'yes') {
-				alert("You should take Ruby/Rails!");
+				webDev.slideUp();
+				webDev.find('h1').slideUp();
+				setTimeout(function(){
+					result();
+				}, 700)
 			} else if (target.id === 'no') {
-				alert("You should take PHP/Drupal!");
+				webDev.slideUp();
+				webDev.find('h1').slideUp();
+				setTimeout(function(){
+					result();
+				}, 700)
 			};
 		};
 
 		var mobileDevSelection = function mobileDevSelection(evt) {
 			var target = evt.currentTarget;
 			if (target.id === 'windows') {
-				alert("You should think about taking C#/.NET!");
+				mobileDev.slideUp();
+				mobileDev.find('h1').slideUp();
+				setTimeout(function(){
+					mobileDev.removeClass('show');
+				}, 400);
+				setTimeout(function(){
+					result();
+				}, 700)
 			} else if (target.id === 'android') {
-				alert("You should think about taking Java/Droid!");
+				mobileDev.slideUp();
+				mobileDev.find('h1').slideUp();
+				setTimeout(function(){
+					mobileDev.removeClass('show');
+				}, 400);
+				setTimeout(function(){
+					result();
+				}, 700)
 			};
 		};
 
 		var softwareDevSelection = function softwareDevSelection(evt) {
 			var target = evt.currentTarget;
 			if (target.id === 'window') {
-				alert("You should think about taking C#/.NET!");
+				softwareDev.slideUp();
+				softwareDev.find('h1').slideUp();
+				setTimeout(function(){
+					result();
+					softwareDev.addClass('')
+				},700)
 			} else if (target.id === 'cross-platform') {
-				alert("You should think about taking Java/Droid!");
+				softwareDev.slideUp();
+				softwareDev.find('h1').slideUp();
+				setTimeout(function(){
+					result();
+				},700)	
 			};
 		};
-
-
 
 
 		for (i = 0; i < choices.length; i++) {
@@ -106,6 +141,10 @@ $(document).ready(function(){
 		for (i = 0; i < choices.length; i++) {
     	choices[i].addEventListener('click', softwareDevSelection, false);
     };
+
+    function result() {
+    	$('body').fadeOut('slow').addClass('body_new');
+    }
 });
 
 

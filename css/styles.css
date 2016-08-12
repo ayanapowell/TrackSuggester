@@ -3,6 +3,14 @@ body {
 	background-size: 100% 800px;
 }
 
+.body_new {
+	width: 100%;
+	height: 100%;
+	background-image: url("../img/result.jpeg");
+	background-size: 100% 800px;
+	transition: 1s ease;
+}
+
 img {
 	position: absolute;
 	z-index: -1;
@@ -142,5 +150,10 @@ h3:hover {
 	padding-top: 30%;
 }
 
+
+#softwareDev_choices {
+	width: 55%;
+	margin-left: 27%;
+}
 
 
