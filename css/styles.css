@@ -1,0 +1,28 @@
+h1 {
+	text-align: center;
+}
+
+h3 {
+	text-align: center;
+	cursor: pointer;
+}
+
+.container,
+.row {
+	padding-top: 10%;
+}
+
+.web-dev,
+.web-work,
+.mobile-dev,
+.desktop-dev {
+	display: none;
+}
+
+.show {
+	display: block;
+}
+
+.hide {
+	display: none;
+}
