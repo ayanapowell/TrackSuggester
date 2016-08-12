@@ -8,8 +8,14 @@ $(document).ready(function(){
 
 
 
+
 		var initialSelection = function initialSelection(evt) {
-    	var target = evt.target;
+            console.log('choices');
+            console.log(evt.currentTarget);
+
+
+
+    	var target = evt.target; 
     	if (target.id === 'web') {
     		webDev.addClass('show');
     	} else if (target.id=== 'mobiels') {

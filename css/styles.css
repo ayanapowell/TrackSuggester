@@ -1,10 +1,11 @@
 body {
-	background-color: #a6ff4d;
+	background-color: #e62e00;
 }
 h1 {
 	text-align: center;
 	color: white;
 	font-family: 'Bungee Inline', cursive;
+	margin-bottom: 15%;
 }
 
 h3 {
@@ -12,13 +13,24 @@ h3 {
 	cursor: pointer;
 	font-family: 'Rokkitt', serif;
 	font-weight: 700;
+	font-size: 50px;
 
 }
 
-.container,
-.row {
+.container {
 	padding-top: 10%;
 }
+
+#initial_choices .choices,
+#webDev_choices .choices,
+#webWork_choices .choices,
+#webWork_choices .choices,
+#mobileDev_choices .choices,
+#softwareDev_choices .choices {
+	display: inline-block;
+	padding: 30px;
+}
+
 
 .web-dev,
 .web-work,
