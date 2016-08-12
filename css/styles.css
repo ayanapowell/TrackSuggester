@@ -1,5 +1,6 @@
 h1 {
 	text-align: center;
+	color: ;
 }
 
 h3 {
@@ -15,7 +16,7 @@ h3 {
 .web-dev,
 .web-work,
 .mobile-dev,
-.desktop-dev {
+.software-dev {
 	display: none;
 }
 
