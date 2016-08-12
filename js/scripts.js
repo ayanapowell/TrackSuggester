@@ -19,20 +19,31 @@ $(document).ready(function(){
     	if (target.id === 'web') {
     		mobileDev.removeClass('show');
     		softwareDev.removeClass('show');
-    		initial.fadeOut('800');
+    		initial.slideUp(800);
+    	 	initial.find('h1').slideUp(800);
     		setTimeout(function(){
-    			webDev.fadeIn('900');
-    		},9000);
-    		
-
+    			webDev.slideDown();
+    			webDev.find('h1').slideDown();	
+    		}, 1000)
     	} else if (target.id=== 'mobile') {
     		webDev.removeClass('show');
     		softwareDev.removeClass('show');
+    		initial.slideUp(800);
+    		initial.find('h1').slideUp(800);
+    		setTimeout(function(){
+    			mobileDev.slideDown();
+    			mobileDev.find('h1').slideDown();
+    		},1000)
     		mobileDev.addClass('show');
     	} else if (target.id === 'software') {
     		webDev.removeClass('show');
     		mobileDev.removeClass('show');
-    		softwareDev.addClass('show');
+    		initial.slideUp(800);
+    		initial.find('h1').slideUp(800);
+    		setTimeout(function(){
+    			webDev.slideDown();
+    			webDev.find('h1').slideDown();
+    		},1000)
     	};
 		};
 
@@ -41,7 +52,12 @@ $(document).ready(function(){
 			if (target.id === 'looks') {
 				alert("You should take CSS/Design!");
 			} else if (target.id === 'works') {
-				webWork.addClass('show');
+				webDev.slideUp(800);
+				webDev.find('h1').slideUp(800);
+				setTimeout(function(){
+					webWork.slideDown();
+					webWork.find('h1').slideDown();
+				},1000);
 			};
 		};
 
@@ -53,7 +69,6 @@ $(document).ready(function(){
 				alert("You should take PHP/Drupal!");
 			};
 		};
-
 
 		var mobileDevSelection = function mobileDevSelection(evt) {
 			var target = evt.currentTarget;
