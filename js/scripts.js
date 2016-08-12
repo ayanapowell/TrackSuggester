@@ -70,8 +70,8 @@ $(document).ready(function(){
 		var webWorkSelection = function webWorkSelection(evt) {
 			var target = evt.currentTarget;
 			if (target.id === 'yes') {
-				webDev.slideUp();
-				webDev.find('h1').slideUp();
+				webWork.slideUp();
+				webWork.find('h1').slideUp();
 				setTimeout(function(){
 					result();
 				}, 700)
@@ -114,7 +114,7 @@ $(document).ready(function(){
 				softwareDev.find('h1').slideUp();
 				setTimeout(function(){
 					result();
-					softwareDev.addClass('')
+					$('body').show($('.conclude'));
 				},700)
 			} else if (target.id === 'cross-platform') {
 				softwareDev.slideUp();
@@ -143,7 +143,7 @@ $(document).ready(function(){
     };
 
     function result() {
-    	$('body').fadeOut('slow').addClass('body_new');
+    	$('body').fadeOut(3000).addClass('body_new');
     }
 });
 

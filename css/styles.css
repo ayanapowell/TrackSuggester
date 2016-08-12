@@ -44,6 +44,30 @@ h3:hover {
 	padding-bottom: 0;
 }
 
+.conclude h4 {
+	padding-top: 80px;
+	position: ;
+	text-align: center;
+	font-family: 'Rokkitt', serif;
+	font-weight: 400;
+	font-size: 40px;
+	color: #404040;
+	z-index: 5;
+}
+
+.conclude p {
+	padding-top: 160px;
+	position: ;
+	text-align: center;
+	font-family: 'Rokkitt', serif;
+	font-weight: 400;
+	font-size: 20px;
+	color: #404040;
+	letter-spacing: 2px;
+	cursor: pointer;
+	z-index: 5;
+}
+
 .web-dev,
 .web-work,
 .mobile-dev,
@@ -68,9 +92,11 @@ h3:hover {
 	display: none;
 }
 /* ------ INTRO --- */
-.intro {
-	display: ;
+
+.conclude {
+	display: none;
 }
+
 
 .intro h2 {
 	width: 80%;
