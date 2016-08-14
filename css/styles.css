@@ -17,13 +17,18 @@ img {
 }
 
 #body_new {
-	position: absolute;
+	display: flex;
 	width: 100%;
 	height: 100%;
 	width: 100%;
 	height: 800px;
 	transition: 1s ease;
 	display: none;
+	z-index: -1;
+}
+
+#body_new img {
+	display: flex;
 	z-index: -1;
 }
 
@@ -52,8 +57,9 @@ h3:hover {
 }
 
 .message {
+
 	display: none;
-	z-index: 4;
+	z-index: 5;
 }
 
 .message h4 {
@@ -63,25 +69,22 @@ h3:hover {
 	font-weight: 400;
 	font-size: 40px;
 	color: #404040;
-	z-index: 5;
 }
 
 .message p {
-	padding-top: 150px;
 	text-align: center;
+	padding-top: 150px;
 	font-family: 'Rokkitt', serif;
 	font-weight: 400;
 	font-size: 20px;
 	color: white;
 	letter-spacing: 2px;
 	line-height: 30px; 
-	z-index: 5;
 }
 
 .fa-info {
 	padding-left: 10px;
 	color: #737373;
-	z-index: 5;
 }
 
 .fa-info:hover {
