@@ -61,7 +61,7 @@ $(document).ready(function(){
 			webDev.slideUp();
 			webDev.find('h1').slideUp();
 			setTimeout(function(){
-				result();
+				result(css);
 			}, 700)
 		} else if (target.id === 'works') {
 			webDev.slideUp(800);
@@ -80,13 +80,13 @@ $(document).ready(function(){
 			webWork.slideUp();
 			webWork.find('h1').slideUp();
 			setTimeout(function(){
-				result();
+				result(ruby);
 			}, 700)
 		} else if (target.id === 'no') {
-			webDev.slideUp();
-			webDev.find('h1').slideUp();
+			webWork.slideUp();
+			webWork.find('h1').slideUp();
 			setTimeout(function(){
-				result();
+				result(php);
 			}, 700)
 		};
 	};
@@ -101,7 +101,7 @@ $(document).ready(function(){
 				mobileDev.removeClass('show');
 			}, 400);
 			setTimeout(function(){
-				result();
+				result(cSharp);
 			}, 700)
 		} else if (target.id === 'android') {
 			mobileDev.slideUp();
@@ -110,7 +110,7 @@ $(document).ready(function(){
 				mobileDev.removeClass('show');
 			}, 400);
 			setTimeout(function(){
-				result();
+				result(java);
 			}, 700)
 		};
 	};
