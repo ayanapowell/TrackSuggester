@@ -5,8 +5,14 @@ $(document).ready(function(){
 			mobileDev = $('.mobile-dev'),
 			softwareDev = $('.software-dev'),
 			choices = document.getElementsByClassName('choices'),
-			i;
+			i,
+			java = $('.java'),
+			cSharp = $('.cSharp'),
+			ruby = $('.ruby'),
+			php = $('.php'),
+			css = $('.css');
 
+//So you want to be a developer? Lets get started.
 	$('p').on('click', function(){
 		$('.intro').fadeOut(900);
 		setTimeout(function(){
@@ -116,19 +122,18 @@ $(document).ready(function(){
 			softwareDev.slideUp();
 			softwareDev.find('h1').slideUp();
 			setTimeout(function(){
-				result();
-				$('body').show($('.conclude'));
+				result(cSharp);
 			},700)
 		} else if (target.id === 'cross-platform') {
 			softwareDev.slideUp();
 			softwareDev.find('h1').slideUp();
 			setTimeout(function(){
-				result();
+				result(java);
 			},700)	
 		};
 	};
 
-// Event listeners for
+// Event listeners for functions
 	for (i = 0; i < choices.length; i++) {
   	choices[i].addEventListener('click', initialSelection, false);
   };
@@ -145,9 +150,14 @@ $(document).ready(function(){
   	choices[i].addEventListener('click', softwareDevSelection, false);
   };
 
-  function result() {
-  	$('body').fadeOut(3000).addClass('body_new');
-  }
+  function result(el) {
+  	var el = $(el);
+  	$('#background_image').fadeOut(800);
+  	setTimeout(function(){
+  		$('#body_new').fadeIn(1000);
+  		el.addClass('show');
+  	}, 900);
+  };
 });
 
 
