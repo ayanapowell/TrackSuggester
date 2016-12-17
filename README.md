@@ -1,12 +1,12 @@
-# _Code Review 2_
+# _Track Suggester_
 
-#### _Code Review 2 for Epicodus, 8/5/2016_
+#### _8/5/2016_
 
 #### By _**Ayana Powell**_
 
 ## Description
 
-_This is a webpage that will suggest a specific language track for Epicodus students. Students will answer a series of questions in which those answers will produce a specific track recommendation._
+_This is a webpage that will suggest a specific language track for Epicodus students. Students will answer a series of questions in which those answers will produce a track recommendation based on those answers._
 _It can be viewed and/or used at https://ayanapowell.github.io/track-suggeter/_
 
 ## Setup/Installation Requirements
